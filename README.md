@@ -1,40 +1,39 @@
 # Darles Games — Projects & Cases
 
-Статический сайт-библиотека: HTML5-игры, интерактивные веб-продукты, игровые механики, игры для ПК и кейсы.
+Static website library: HTML5 games, interactive web products, game mechanics, PC games, and case studies.
 
-## Автоматическая локализация
+## Automatic localization
 
-Сайт автоматически определяет основной язык браузера:
+The website automatically detects the browser's default language:
 
-- `ru`, `ru-RU` и другие русские локали → русский интерфейс;
-- любой другой язык → английский интерфейс.
+- `ru`, `ru-RU`, and other Russian locales → Russian interface;
+- any other language → English interface.
 
-Локализация не использует cookies и не сохраняет настройки пользователя. Статические переводы находятся в `app.js`, а переводы карточек проектов — в `projects.js`.
+Localization does not use cookies or save user settings. Static translations are located in `app.js`, and project card translations are in `projects.js`.
 
-
-Логотипы Darles Games в шапке и подвале ведут на главный сайт:
+The Darles Games logos in the header and footer link to the main website:
 
 ```text
 https://darlesgames.github.io/
 ```
 
-Контактный блок находится в `index.html`. Подключены:
+The contact block is located in `index.html`. The following are enabled:
 
-- сообщения сообщества VK;
+- VK community messages;
 - Telegram;
 - `DarlesGames@yandex.ru`;
-- кнопка копирования email.
+- Copy email button.
 
-## Структура
+## Structure
 
-- `index.html` — разметка сайта и базовый английский текст;
-- `styles.css` — фирменный дизайн и адаптивность;
-- `app.js` — локализация, каталог, фильтры, поиск, модальное окно, прямые ссылки на проекты, мобильное меню и копирование контактов;
-- `projects.js` — двуязычные данные всех проектов;
-- `assets/hero-magic-gamepad.webp` — изображение первого экрана;
-- `assets/projects/` — обложки проектов;
-- `.nojekyll` — отключает обработку Jekyll на GitHub Pages.
+- `index.html` — website markup and basic English text;
+- `styles.css` — brand design and responsiveness;
+- `app.js` — localization, catalog, filters, search, modal window, direct links to projects, mobile menu, and contact copying;
+- `projects.js` — bilingual project data;
+- `assets/hero-magic-gamepad.webp` — home screen image;
+- `assets/projects/` — project covers;
+- `.nojekyll` — disables Jekyll processing on GitHub Pages.
 
-## Политика конфиденциальности
+## Privacy Policy
 
-Для текущей статической версии без форм, аналитики, регистрации и пользовательских аккаунтов отдельная страница политики не добавлена. Перед подключением форм заявок, аналитики, cookies или других инструментов сбора данных необходимо добавить соответствующую политику и при необходимости уведомление о cookies.
+For the current static version without forms, analytics, registration, and user accounts, a separate privacy policy page has not been added. Before connecting application forms, analytics, cookies, or other data collection tools, you must add an appropriate policy and, if applicable, a cookie notice.
