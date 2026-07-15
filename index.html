@@ -1,0 +1,244 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#0d0620">
+  <meta name="description" content="Darles Games project library: HTML5 games, interactive web products, gameplay mechanics, demos and solutions.">
+  <meta name="author" content="Darles Games">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Darles Games — projects and solutions">
+  <meta property="og:description" content="HTML5 games, interactive web products, gameplay mechanic prototypes and Darles Games solutions.">
+  <meta property="og:image" content="assets/hero-magic-gamepad.webp">
+  <meta name="twitter:card" content="summary_large_image">
+  <title>Darles Games — projects and solutions</title>
+  <link rel="icon" href="assets/darles-games-logo.png" type="image/png">
+  <link rel="stylesheet" href="styles.css">
+  <script>
+    (() => {
+      const primaryLanguage = (navigator.languages && navigator.languages[0]) || navigator.language || "en";
+      const language = /^ru(?:-|$)/i.test(primaryLanguage) ? "ru" : "en";
+      document.documentElement.lang = language;
+      document.documentElement.dataset.language = language;
+      window.DARLES_LANGUAGE = language;
+    })();
+  </script>
+  <script src="projects.js" defer></script>
+  <script src="app.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#projects" data-i18n="skipProjects">Skip to projects</a>
+
+  <div class="ambient ambient-one" aria-hidden="true"></div>
+  <div class="ambient ambient-two" aria-hidden="true"></div>
+  <div class="runes" aria-hidden="true"></div>
+
+  <header class="site-header" id="top">
+    <div class="container header-inner">
+      <a class="brand" href="https://darlesgames.github.io/" data-i18n-aria-label="mainSiteAria" aria-label="Go to the Darles Games main website">
+        <img src="assets/darles-games-logo.png" data-i18n-alt="logoAlt" alt="Darles Games logo" width="48" height="56">
+        <span>
+          <strong>Darles Games</strong>
+          <small>projects · mechanics · solutions</small>
+        </span>
+      </a>
+
+      <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="main-nav">
+        <span></span><span></span><span></span>
+        <span class="sr-only" data-i18n="openMenu">Open menu</span>
+      </button>
+
+      <nav class="main-nav" id="main-nav" data-i18n-aria-label="mainNavigationAria" aria-label="Main navigation">
+        <a href="#directions" data-i18n="navLibrary">Library</a>
+        <a href="#projects" data-i18n="navProjects">Projects</a>
+        <a href="#contact" data-i18n="navOrder">Order</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero section">
+      <div class="container hero-grid">
+        <div class="hero-copy reveal">
+          <p class="eyebrow"><span class="eyebrow-line" aria-hidden="true"></span><span data-i18n="heroKicker">Darles Games library</span></p>
+          <h1><span data-i18n="heroTitle">Games, interactive products and</span> <em data-i18n="heroTitleAccent">mechanics</em></h1>
+          <p class="hero-lead" data-i18n="heroLead">
+            A public showcase of released projects, demos, prototypes and technical solutions by the studio, with descriptions, materials and links to playable versions.
+          </p>
+          <div class="hero-actions">
+            <a class="button button-primary" href="#projects" data-i18n="viewProjects">View projects</a>
+            <a class="button button-ghost" href="#contact" data-i18n="discussOrder">Discuss an order</a>
+          </div>
+          <ul class="hero-points" data-i18n-aria-label="libraryContentsAria" aria-label="Library contents">
+            <li><strong data-i18n="heroPointReleases">Releases and demos</strong><span data-i18n="heroPointReleasesText">finished games and playable builds</span></li>
+            <li><strong data-i18n="heroPointMechanics">Mechanics</strong><span data-i18n="heroPointMechanicsText">prototypes and gameplay systems</span></li>
+            <li><strong data-i18n="heroPointSolutions">Solutions</strong><span data-i18n="heroPointSolutionsText">interactive web products</span></li>
+          </ul>
+        </div>
+
+        <div class="hero-art reveal">
+          <figure class="hero-showcase">
+            <img src="assets/hero-magic-gamepad.webp" data-i18n-alt="heroImageAlt" alt="A magical sphere with a gamepad and digital code" width="1100" height="1100" fetchpriority="high">
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <section class="section directions" id="directions">
+      <div class="container">
+        <div class="section-heading reveal">
+          <div>
+            <p class="eyebrow"><span class="eyebrow-line" aria-hidden="true"></span><span data-i18n="libraryKicker">Project library</span></p>
+            <h2 data-i18n="directionsTitle">Directions and formats</h2>
+          </div>
+          <p data-i18n="directionsLead">Released games, demos, interactive products, mechanic prototypes and documented Darles Games solutions.</p>
+        </div>
+
+        <div class="direction-grid">
+          <article class="direction-card direction-active reveal" data-category-link="html5">
+            <div class="direction-icon" aria-hidden="true">⌁</div>
+            <p class="direction-status" data-i18n="statusMain">Main section</p>
+            <h3 data-i18n="directionHtml5Title">HTML5 games</h3>
+            <p data-i18n="directionHtml5Text">Browser games for web portals and gaming platforms: releases, demos, prototypes and technical notes.</p>
+            <button type="button"><span data-i18n="openProjects">Open projects</span> <span>→</span></button>
+          </article>
+
+          <article class="direction-card reveal" data-category-link="web-product">
+            <div class="direction-icon" aria-hidden="true">◇</div>
+            <p class="direction-status" data-i18n="statusGrowing">Section in development</p>
+            <h3 data-i18n="directionWebTitle">Interactive web products</h3>
+            <p data-i18n="directionWebText">Tests, quizzes, invitations, greetings, surveys, mini-games and unconventional promotional pages.</p>
+            <button type="button"><span data-i18n="openSection">Open section</span> <span>→</span></button>
+          </article>
+
+          <article class="direction-card reveal" data-category-link="mechanic">
+            <div class="direction-icon" aria-hidden="true">✦</div>
+            <p class="direction-status" data-i18n="statusSoon">Coming soon</p>
+            <h3 data-i18n="directionMechanicsTitle">Gameplay mechanics</h3>
+            <p data-i18n="directionMechanicsText">Mechanic prototypes, gameplay systems, staff training and gamified digital products.</p>
+            <button type="button"><span data-i18n="openSection">Open section</span> <span>→</span></button>
+          </article>
+
+          <article class="direction-card reveal" data-category-link="desktop">
+            <div class="direction-icon" aria-hidden="true">▣</div>
+            <p class="direction-status" data-i18n="statusLater">Later</p>
+            <h3 data-i18n="directionDesktopTitle">PC games</h3>
+            <p data-i18n="directionDesktopText">Larger original projects for Windows and other desktop platforms.</p>
+            <button type="button"><span data-i18n="openSection">Open section</span> <span>→</span></button>
+          </article>
+
+          <article class="direction-card reveal" data-category-link="case">
+            <div class="direction-icon" aria-hidden="true">⌘</div>
+            <p class="direction-status" data-i18n="statusPreparing">In preparation</p>
+            <h3 data-i18n="directionCasesTitle">Cases and solutions</h3>
+            <p data-i18n="directionCasesText">Detailed materials about project goals, implementation, technical decisions and results.</p>
+            <button type="button"><span data-i18n="openSection">Open section</span> <span>→</span></button>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section projects-section" id="projects">
+      <div class="container">
+        <div class="section-heading reveal">
+          <div>
+            <p class="eyebrow"><span class="eyebrow-line" aria-hidden="true"></span><span data-i18n="catalogKicker">Catalog</span></p>
+            <h2 data-i18n="projectsTitle">Projects and development work</h2>
+          </div>
+          <p data-i18n="projectsLead">Games, demos, interactive products and solutions with descriptions, materials and publication links.</p>
+        </div>
+
+        <div class="project-toolbar reveal">
+          <div class="filters" role="group" data-i18n-aria-label="filtersAria" aria-label="Project filters">
+            <button class="filter-button is-active" type="button" data-filter="all" data-i18n="filterAll">All</button>
+            <button class="filter-button" type="button" data-filter="html5" data-i18n="filterHtml5">HTML5 games</button>
+            <button class="filter-button" type="button" data-filter="web-product" data-i18n="filterWeb">Web products</button>
+            <button class="filter-button" type="button" data-filter="mechanic" data-i18n="filterMechanics">Mechanics</button>
+            <button class="filter-button" type="button" data-filter="desktop" data-i18n="filterDesktop">PC games</button>
+            <button class="filter-button" type="button" data-filter="case" data-i18n="filterCases">Cases</button>
+          </div>
+          <label class="search-box">
+            <span class="sr-only" data-i18n="searchProjects">Search projects</span>
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="m21 21-4.35-4.35m2.35-5.65a8 8 0 1 1-16 0 8 8 0 0 1 16 0Z"/></svg>
+            <input id="project-search" type="search" data-i18n-placeholder="searchPlaceholder" placeholder="Title, genre, technology…" autocomplete="off">
+          </label>
+        </div>
+
+        <div class="project-grid" id="project-grid"></div>
+        <div class="empty-state" id="empty-state" hidden>
+          <span>✧</span>
+          <h3 data-i18n="emptyTitle">Materials for this section are being prepared</h3>
+          <p data-i18n="emptyText">This section will be updated as projects are published and documented.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section contact-section" id="contact">
+      <div class="container contact-card reveal">
+        <div class="contact-copy">
+          <p class="eyebrow"><span class="eyebrow-line" aria-hidden="true"></span><span data-i18n="contactKicker">Orders and collaboration</span></p>
+          <h2 data-i18n="contactTitle">Order a similar project or propose a collaboration</h2>
+          <p data-i18n="contactLead">You can commission an HTML5 game, an interactive web product, an MVP or a gameplay mechanic prototype. Darles Games is also open to partnership proposals, adaptations of existing solutions and joint projects.</p>
+          <ul class="contact-topics" data-i18n-aria-label="contactTopicsAria" aria-label="Contact topics">
+            <li data-i18n="contactTopicDevelopment">Custom development</li>
+            <li data-i18n="contactTopicAdaptation">Mechanic adaptation</li>
+            <li data-i18n="contactTopicPartnership">Partnerships and proposals</li>
+          </ul>
+        </div>
+        <div class="contact-actions">
+          <a class="button button-light" href="https://vk.ru/im/convo/-224400042?entrypoint=community_page&amp;tab=all" target="_blank" rel="noreferrer" data-i18n="writeVk">Message on VK</a>
+          <a class="button button-contact-ghost" href="https://t.me/darles_channel" target="_blank" rel="noreferrer">Telegram</a>
+          <div class="email-contact">
+            <a href="mailto:DarlesGames@yandex.ru">DarlesGames@yandex.ru</a>
+            <button class="copy-email" type="button" data-copy-email="DarlesGames@yandex.ru" data-i18n-aria-label="copyEmailAria" aria-label="Copy email address">
+              <span aria-live="polite" data-i18n="copy">Copy</span>
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <a class="footer-brand" href="https://darlesgames.github.io/" data-i18n-aria-label="mainSiteAria" aria-label="Go to the Darles Games main website">
+        <img src="assets/darles-games-logo.png" alt="" width="34" height="40">
+        <div><strong>Darles Games</strong><span>© <span id="current-year"></span></span></div>
+      </a>
+      <p>Games · Interactive products · Mechanics · Solutions</p>
+      <nav class="footer-nav" data-i18n-aria-label="footerNavigationAria" aria-label="Footer navigation">
+        <a href="https://darlesgames.github.io/" data-i18n="mainSite">Main website</a>
+        <a href="#projects" data-i18n="navProjects">Projects</a>
+        <a href="#top"><span data-i18n="toTop">To top</span> ↑</a>
+      </nav>
+    </div>
+  </footer>
+
+  <dialog class="project-modal" id="project-modal" aria-labelledby="modal-title">
+    <button class="modal-close" type="button" data-i18n-aria-label="closeAria" aria-label="Close">×</button>
+    <div class="modal-cover" id="modal-cover" aria-hidden="true"></div>
+    <div class="modal-content">
+      <div class="modal-meta" id="modal-meta"></div>
+      <h2 id="modal-title"></h2>
+      <p class="modal-lead" id="modal-description"></p>
+      <div class="modal-columns">
+        <section>
+          <h3 data-i18n="aboutProject">About the project</h3>
+          <p id="modal-details"></p>
+        </section>
+        <section>
+          <h3 data-i18n="keySolutions">Key solutions</h3>
+          <ul id="modal-solutions"></ul>
+        </section>
+      </div>
+      <div class="modal-stack" id="modal-stack"></div>
+      <div class="modal-links" id="modal-links"></div>
+      <button class="project-share" id="project-share" type="button"><span data-i18n="copyProjectLink">Copy project link</span></button>
+    </div>
+  </dialog>
+
+  <noscript>
+    <div class="noscript">JavaScript is required to display the project catalog. / Для отображения каталога проектов требуется JavaScript.</div>
+  </noscript>
+</body>
+</html>

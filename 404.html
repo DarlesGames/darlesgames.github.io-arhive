@@ -1,0 +1,21 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta http-equiv="refresh" content="0;url=./">
+  <title>Darles Games</title>
+  <script>
+    (() => {
+      const primaryLanguage = (navigator.languages && navigator.languages[0]) || navigator.language || "en";
+      const isRussian = /^ru(?:-|$)/i.test(primaryLanguage);
+      document.documentElement.lang = isRussian ? "ru" : "en";
+      window.addEventListener("DOMContentLoaded", () => {
+        const link = document.querySelector("a");
+        if (link) link.textContent = isRussian ? "Вернуться на главную" : "Return to the homepage";
+      });
+    })();
+  </script>
+</head>
+<body><p><a href="./">Return to the homepage</a></p></body>
+</html>
