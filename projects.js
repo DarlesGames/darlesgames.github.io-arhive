@@ -319,7 +319,7 @@ window.DARLES_PROJECTS = [
       url: "https://games.woman.ru/game/lovtsy-snitchej/"
     }
   ]
-}
+},
   {
     id: "astro",
     title: { ru: "Astro", en: "Astro" },
