@@ -815,5 +815,102 @@ window.DARLES_PROJECTS = [
       "Skill Progression"
     ],
     links: []
+  },
+  {
+    id: "svoy",
+    title: {
+      ru: "Свой",
+      en: "Svoy"
+    },
+    category: "desktop",
+    type: {
+      ru: "Нарративная sci-fi игра",
+      en: "Narrative sci-fi game"
+    },
+    status: "development",
+    statusLabel: {
+      ru: "В разработке",
+      en: "In development"
+    },
+    featured: false,
+    accent: "space",
+    cover: "assets/projects/svoy.webp",
+    short: {
+      ru: "Самостоятельная история для ПК во вселенной Starless Veil, выросшая из трёхдневного джем-проекта в долгосрочную авторскую разработку.",
+      en: "A standalone PC story set in the Starless Veil universe, evolved from a three-day game-jam concept into a long-term personal project."
+    },
+    details: {
+      ru: "«Свой» изначально создавался в рамках трёхдневного джема MyIndie, но завершить проект в установленный срок не удалось. В процессе разработки стало ясно, что его история естественно вписывается в лор Starless Veil, поэтому игра развивается как отдельное произведение внутри общей вселенной. Проект создаётся одним разработчиком исключительно в свободное время и с длительными перерывами; публичного демо и определённой даты релиза пока нет.",
+      en: "Svoy began as a three-day MyIndie jam project but was not completed within the event deadline. During development, its story proved to be a natural fit for the lore of Starless Veil, so it is now being shaped as a standalone work within the shared universe. The game is developed solo, exclusively in limited spare time and with long pauses; no public demo or release date is currently available."
+    },
+    solutions: {
+      ru: [
+        "Самостоятельная история, сохраняющая связь с общей вселенной и лором Starless Veil.",
+        "Развитие компактной трёхдневной джем-концепции в долгосрочный проект для ПК.",
+        "Соло-разработка итерациями с сохранением целостности авторского повествования."
+      ],
+      en: [
+        "A standalone story that remains connected to the shared Starless Veil universe and lore.",
+        "Expansion of a compact three-day jam concept into a long-term PC project.",
+        "Iterative solo development focused on preserving a cohesive authorial narrative."
+      ]
+    },
+    stack: [
+      "Desktop",
+      "Narrative Design",
+      "Shared Universe"
+    ],
+    links: []
+  },
+  {
+    id: "starless-veil",
+    title: {
+      ru: "Starless Veil",
+      en: "Starless Veil"
+    },
+    category: "desktop",
+    type: {
+      ru: "Психологическое sci-fi приключение",
+      en: "Psychological sci-fi adventure"
+    },
+    status: "development",
+    statusLabel: {
+      ru: "В разработке",
+      en: "In development"
+    },
+    featured: false,
+    accent: "space",
+    cover: "assets/projects/starless-veil.webp",
+    short: {
+      ru: "Психологическое sci-fi приключение о потерянном исследовательском корабле, пяти членах экипажа и ИИ, чья эволюция зависит от решений игрока.",
+      en: "A psychological sci-fi adventure about a lost research vessel, five crew members and an AI whose evolution is shaped by the player's decisions."
+    },
+    details: {
+      ru: "Исследовательский корабль под управлением ИИ попадает в аномалию: экипаж выходит из криосна без координат и с ограниченными ресурсами, исследует пустынные планеты и принимает решения, влияющие на людей, искусственный интеллект и финал истории. Проект строится вокруг недоверия, ответственности и неоднозначного выбора между помощником и потенциальной угрозой. Пять персонажей получают личные прологи, а перманентная смерть, диалоги, головоломки и напряжённые сцены поддерживают мрачную атмосферу без скримеров. Игра много лет создаётся одним разработчиком в свободное время и с длительными перерывами; сроки демо и релиза не определены.",
+      en: "An AI-controlled research vessel enters an anomaly, leaving its crew awake from cryosleep with lost coordinates and limited resources. They explore barren planets and make decisions that affect the people, the artificial intelligence and the story's ending. The project centers on mistrust, responsibility and the uncertainty of whether the AI is an ally or a threat. Five characters have personal prologues, while permadeath, dialogue, puzzles and tense sequences build a bleak atmosphere without jump scares. The game has been developed solo for years in limited spare time and through long pauses; demo and release dates remain undetermined."
+    },
+    solutions: {
+      ru: [
+        "Пять игровых персонажей с личными прологами и собственным взглядом на происходящее.",
+        "Система решений, меняющая отношения экипажа, эволюцию ИИ, развитие сюжета и концовку.",
+        "Перманентная смерть и ограниченные ресурсы, усиливающие ответственность за каждый выбор.",
+        "Исследование планет, диалоги, головоломки и напряжённые сцены в мрачной атмосфере без скримеров."
+      ],
+      en: [
+        "Five playable characters with personal prologues and distinct perspectives on events.",
+        "A decision system affecting crew relationships, AI evolution, narrative progression and the ending.",
+        "Permadeath and limited resources that reinforce responsibility for every choice.",
+        "Planetary exploration, dialogue, puzzles and tense sequences in a bleak atmosphere without jump scares."
+      ]
+    },
+    stack: [
+      "Desktop",
+      "Branching Narrative",
+      "AI Evolution System",
+      "Permadeath",
+      "Dialogue System",
+      "Puzzle Systems"
+    ],
+    links: []
   }
 ];
