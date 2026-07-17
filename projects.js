@@ -21,35 +21,53 @@
 window.DARLES_PROJECTS = [
   {
     id: "tavern-below",
-    title: { ru: "Таверна: Этажом ниже", en: "Tavern: The Floor Below" },
+    title: {
+      ru: "Таверна: Этажом ниже",
+      en: "Tavern: The Floor Below"
+    },
     category: "html5",
-    type: { ru: "Нарративная игра · крафт", en: "Narrative crafting game" },
-    status: "released",
-    statusLabel: { ru: "Опубликовано", en: "Released" },
+    type: {
+      ru: "Нарративная игра · алхимия",
+      en: "Narrative alchemy game"
+    },
+    status: "development",
+    statusLabel: {
+      ru: "В разработке",
+      en: "In development"
+    },
     featured: true,
-    accent: "violet",
-    cover: "",
+    accent: "magic",
+    cover: "assets/projects/tavern-below.webp",
     short: {
-      ru: "Мрачная фэнтезийная HTML5-игра об алхимике, который варит потусторонние зелья для проклятых душ.",
-      en: "A dark fantasy HTML5 game about an alchemist who brews otherworldly potions for cursed souls."
+      ru: "Первая версия мрачной фэнтезийной веб-игры об алхимике, который варит зелья для посетителей мистической таверны и постепенно раскрывает их истории.",
+      en: "The original version of a dark fantasy web game about an alchemist who brews potions for visitors to a mystical tavern and gradually uncovers their stories."
     },
     details: {
-      ru: "Авторский проект Darles Games с последовательным созданием зелий, системой кармы, персонажами, книгой рецептов, прогрессией и несколькими вариантами финала.",
-      en: "An original Darles Games project featuring step-by-step potion crafting, a karma system, characters, a recipe book, progression and several ending variations."
+      ru: "Проект дошёл до альфа-тестирования и был опубликован на Яндекс Играх, но из-за нехватки времени был снят с публикации и отложен. Интерес игроков позднее вернул разработку к жизни и стал основой для полностью переосмысленной версии 2.0. Оригинальная игра сохраняется как самостоятельный долгосрочный проект с последовательным приготовлением зелий, системой кармы, книгой рецептов, персонажами и вариативным сюжетом.",
+      en: "The project reached alpha testing and was published on Yandex Games, but limited development time led to its removal and long-term pause. Player interest later revived the concept and became the foundation for a substantially rebuilt 2.0 version. The original remains a separate long-term project built around ordered potion crafting, karma, a recipe book, characters and branching narrative outcomes."
     },
     solutions: {
       ru: [
-        "Небанальная тема изготовления потусторонних зелий вместо обычной еды",
-        "Сочетание нарратива, рецептов и системной прогрессии",
-        "Адаптация полного игрового цикла под браузерный формат"
+        "Последовательная система приготовления зелий с проверкой порядка ингредиентов.",
+        "Карма как внутриигровой ресурс, связанный с обслуживанием посетителей и прогрессией.",
+        "Книга рецептов и набор персонажей, через диалоги которых раскрывается история.",
+        "Вариативное развитие сюжета и несколько возможных финалов."
       ],
       en: [
-        "An unusual focus on otherworldly potions instead of conventional food crafting",
-        "A combination of narrative, recipes and systemic progression",
-        "A complete gameplay loop adapted to the browser format"
+        "An ordered potion-crafting system that validates ingredient sequence.",
+        "Karma used as an in-game resource tied to serving visitors and progression.",
+        "A recipe book and character cast that reveal the story through dialogue.",
+        "Branching narrative progression with multiple possible endings."
       ]
     },
-    stack: ["Construct 3", "HTML5", "Game Design", "Platform SDK", "Monetization"],
+    stack: [
+      "Construct 3",
+      "HTML5",
+      "Platform SDKs",
+      "Recipe System",
+      "Branching Narrative",
+      "Progression System"
+    ],
     links: []
   },
   {
@@ -602,5 +620,200 @@ window.DARLES_PROJECTS = [
         url: "https://www.construct.net/en/free-online-games/trick-or-treat-62637/play"
       }
     ]
+  },
+  {
+    id: "tavern-below-2-0",
+    title: {
+      ru: "Таверна: Этажом ниже 2.0",
+      en: "Tavern: The Floor Below 2.0"
+    },
+    category: "html5",
+    type: {
+      ru: "Нарративная алхимическая игра",
+      en: "Narrative alchemy game"
+    },
+    status: "development",
+    statusLabel: {
+      ru: "В разработке",
+      en: "In development"
+    },
+    featured: false,
+    accent: "gold",
+    cover: "assets/projects/tavern-below-2-0.webp",
+    short: {
+      ru: "Почти полностью пересобранная версия «Таверны»: варите зелья, экспериментируйте с рецептами, распоряжайтесь кармой и меняйте ход истории своими решениями.",
+      en: "A substantially rebuilt version of Tavern: brew potions, experiment with recipes, manage karma and shape the story through your decisions."
+    },
+    details: {
+      ru: "Версия 2.0 создаётся в одиночку для игроков, которых заинтересовал сюжет первой части; архитектура проекта почти полностью разработана заново. Алхимик искупает грехи, выполняя заказы посетителей мистической таверны: рецепты требуют точной последовательности ингредиентов, а собственные комбинации можно сохранять в книгу. Карма служит валютой, магазин суккуба пополняет запасы, а заколдованных компаньонов можно освобождать за накопленный ресурс. Планируются веб- и настольная версии, более 100 рецептов, множество ингредиентов, персонажей и вариативные финалы. Срок релиза пока не определён.",
+      en: "Version 2.0 is being developed solo for players drawn to the first game's story, with its architecture rebuilt almost entirely from scratch. The alchemist atones by fulfilling orders in a mystical tavern: recipes depend on exact ingredient order, while original combinations can be saved to the recipe book. Karma acts as currency, the succubus-run shop replenishes supplies, and enchanted companions can be freed by sacrificing accumulated karma. Web and desktop builds, over 100 recipes, a broad cast and multiple endings are planned. The release date remains undetermined."
+    },
+    solutions: {
+      ru: [
+        "Пересобранная архитектура для развития проекта одновременно в веб- и настольном форматах.",
+        "Система более чем из 100 рецептов с контролем последовательности ингредиентов и созданием собственных комбинаций.",
+        "Экономика кармы, объединяющая оплату заказов, покупки ингредиентов и освобождение компаньонов.",
+        "Диалоговый сюжет с множеством персонажей, решениями игрока и вариативными финалами."
+      ],
+      en: [
+        "A rebuilt architecture intended to support both web and desktop versions.",
+        "A system of over 100 recipes with ordered ingredients and player-authored combinations.",
+        "A karma economy connecting customer payments, ingredient purchases and companion liberation.",
+        "Dialogue-driven storytelling with a broad cast, player decisions and branching endings."
+      ]
+    },
+    stack: [
+      "HTML5",
+      "Desktop Build",
+      "Recipe System",
+      "Branching Narrative",
+      "Custom Recipe System",
+      "Progression System"
+    ],
+    links: []
+  },
+  {
+    id: "robo-cat-miners",
+    title: {
+      ru: "Робокоты-шахтёры",
+      en: "Robo-Cat Miners"
+    },
+    category: "html5",
+    type: {
+      ru: "Аркадная игра с бурением",
+      en: "Arcade drilling game"
+    },
+    status: "development",
+    statusLabel: {
+      ru: "В разработке",
+      en: "In development"
+    },
+    featured: false,
+    accent: "cyan",
+    cover: "assets/projects/robo-cat-miners.webp",
+    short: {
+      ru: "Однокнопочная браузерная аркада: рассчитайте траекторию самодвижущегося робокота, пробурите путь через подземелье и обойдите острые сталагмиты.",
+      en: "A one-touch browser arcade game: plan the trajectory of a self-propelled robo-cat, drill through each dungeon and avoid sharp stalagmites."
+    },
+    details: {
+      ru: "Игра была выпущена на Яндекс Играх, но после обнаружения ошибок снята с публикации. Полученный опыт используется для будущей переработки проекта. Игровой цикл построен вокруг 15 подземелий: персонаж катится автоматически, а игрок одним касанием прокладывает безопасную траекторию в разрушаемом ландшафте, получает награды за уровни, собирает робокотов и соревнуется в таблице лидеров.",
+      en: "The game was released on Yandex Games and later removed after issues were identified. Lessons from that release now inform a planned rework. Its loop spans 15 dungeons: the character rolls automatically while the player uses one-touch drilling to shape a safe route through terrain, earn level rewards, collect robo-cats and compete on a leaderboard."
+    },
+    solutions: {
+      ru: [
+        "Управление одним касанием, при котором персонаж движется автоматически, а игрок отвечает за траекторию.",
+        "Бурение изменяемого ландшафта с необходимостью заранее учитывать препятствия и сталагмиты.",
+        "Последовательность из 15 подземелий с наградами за прохождение.",
+        "Коллекция робокотов и таблица лидеров для долгосрочной прогрессии."
+      ],
+      en: [
+        "One-touch control where movement is automatic and the player determines the route.",
+        "Terrain drilling that requires anticipating obstacles and stalagmites.",
+        "A 15-dungeon progression sequence with completion rewards.",
+        "Collectible robo-cats and a leaderboard supporting long-term progression."
+      ]
+    },
+    stack: [
+      "HTML5",
+      "Touch Controls",
+      "Terrain Drilling",
+      "Level Progression",
+      "Collectible Characters",
+      "Leaderboards"
+    ],
+    links: []
+  },
+  {
+    id: "find-a-pair-mage-spells",
+    title: {
+      ru: "Найди пару: Заклинания Мага",
+      en: "Find a Pair: Mage's Spells"
+    },
+    category: "html5",
+    type: {
+      ru: "Головоломка · tower defense",
+      en: "Matching puzzle · tower defense"
+    },
+    status: "development",
+    statusLabel: {
+      ru: "В разработке",
+      en: "In development"
+    },
+    featured: false,
+    accent: "blue",
+    cover: "assets/projects/find-a-pair-mage-spells.webp",
+    short: {
+      ru: "Экспериментальная веб-игра, объединяющая знакомый поиск одинаковых пар с развитием защиты в формате tower defense.",
+      en: "An experimental web game combining familiar pair matching with defensive progression inspired by tower defense."
+    },
+    details: {
+      ru: "Проект исследует, как механика памяти и поиска совпадений может работать внутри стратегического цикла защиты. Найденные пары магических заклинаний связывают головоломку с развитием обороны, поэтому результат каждого выбора влияет не только на игровое поле, но и на способность противостоять наступающей угрозе. Концепция находится в активной экспериментальной разработке.",
+      en: "The project explores how memory-based matching can operate inside a strategic defense loop. Matched spell pairs connect the puzzle layer to defensive development, so each choice affects both the matching field and the player's ability to withstand an approaching threat. The concept remains in active experimental development."
+    },
+    solutions: {
+      ru: [
+        "Классическая механика поиска пар используется как основной источник игровых действий.",
+        "Магические совпадения связаны с развитием и работой оборонительных элементов.",
+        "Головоломка и tower defense объединены в единый экспериментальный игровой цикл."
+      ],
+      en: [
+        "Classic pair matching serves as the primary source of player actions.",
+        "Magical matches are connected to the development and operation of defensive elements.",
+        "Puzzle and tower-defense systems are combined into one experimental gameplay loop."
+      ]
+    },
+    stack: [
+      "HTML5",
+      "Matching System",
+      "Tower Defense Systems"
+    ],
+    links: []
+  },
+  {
+    id: "magotetris",
+    title: {
+      ru: "МагоТетрис",
+      en: "MagoTetris"
+    },
+    category: "html5",
+    type: {
+      ru: "Магическая головоломка с блоками",
+      en: "Magic falling-block puzzle"
+    },
+    status: "development",
+    statusLabel: {
+      ru: "В разработке",
+      en: "In development"
+    },
+    featured: false,
+    accent: "magic",
+    cover: "assets/projects/magotetris.webp",
+    short: {
+      ru: "Экспериментальная веб-головоломка со знакомой механикой падающих блоков, дополненной заклинаниями, активными умениями и пассивной прокачкой.",
+      en: "An experimental web puzzle built on familiar falling-block mechanics and extended with spells, active abilities and passive progression."
+    },
+    details: {
+      ru: "Проект переосмысливает классическую формулу тетриса через систему магического развития. Базовая сборка линий остаётся понятным фундаментом, а заклинания, улучшаемые активные способности и пассивные навыки добавляют новые способы влиять на игровое поле. Сейчас игра находится на стадии эксперимента с балансом между чистой головоломкой и долгосрочной прокачкой.",
+      en: "The project reinterprets the classic falling-block formula through magical progression. Line clearing remains the accessible foundation, while spells, upgradeable active abilities and passive skills introduce new ways to affect the playfield. Development currently focuses on balancing the pure puzzle loop with long-term character growth."
+    },
+    solutions: {
+      ru: [
+        "Знакомая система падающих блоков и очистки линий как основа игрового цикла.",
+        "Заклинания и активные умения, позволяющие напрямую изменять ситуацию на поле.",
+        "Пассивные навыки и прокачка, формирующие долгосрочное развитие между игровыми сессиями."
+      ],
+      en: [
+        "A familiar falling-block and line-clearing system as the foundation of the gameplay loop.",
+        "Spells and active abilities that directly alter the state of the playfield.",
+        "Passive skills and upgrades that create long-term progression between play sessions."
+      ]
+    },
+    stack: [
+      "HTML5",
+      "Falling Block System",
+      "Spell System",
+      "Skill Progression"
+    ],
+    links: []
   }
 ];
