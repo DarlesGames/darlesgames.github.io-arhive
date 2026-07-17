@@ -248,63 +248,78 @@ window.DARLES_PROJECTS = [
     links: []
   },
   {
-    id: "snitch-catchers",
-    title: { ru: "Ловцы снитчей", en: "Snitch Catchers" },
-    category: "html5",
-    type: { ru: "Казуальная аркада", en: "Casual arcade" },
-    status: "released",
-    statusLabel: { ru: "Опубликовано", en: "Released" },
-    featured: false,
-    accent: "gold",
-    cover: "",
-    short: {
-      ru: "Казуальная браузерная аркада с простой целью, сбором объектов и короткими сессиями.",
-      en: "A casual browser arcade game with a simple objective, collectible objects and short sessions."
-    },
-    details: {
-      ru: "Проект ориентирован на быстрое понимание правил и повторные попытки без сложного обучения.",
-      en: "The project is designed for immediate rule comprehension and repeated attempts without complex onboarding."
-    },
-    solutions: {
-      ru: ["Минимальный порог входа", "Чёткая цель", "Короткие игровые сессии"],
-      en: ["Low entry barrier", "Clear objective", "Short gameplay sessions"]
-    },
-    stack: ["Construct 3", "HTML5", "Casual Game Design"],
-    links: []
+  id: "snitch-catchers",
+  title: {
+    ru: "Ловцы снитчей",
+    en: "Snitch Catchers"
   },
-  {
-    id: "spelltris",
-    title: { ru: "Spelltris", en: "Spelltris" },
-    category: "html5",
-    type: { ru: "Головоломка · заклинания", en: "Puzzle · spells" },
-    status: "development",
-    statusLabel: { ru: "В разработке", en: "In development" },
-    featured: true,
-    accent: "magic",
-    cover: "",
-    short: {
-      ru: "Портретная HTML5-головоломка, объединяющая падающие фигуры, заклинания, таланты и систему маны.",
-      en: "A portrait HTML5 puzzle combining falling pieces, spells, talents and a mana system."
-    },
-    details: {
-      ru: "Проект развивает классическую механику через активные способности, свитки, уровни, прогрессию и адаптивный интерфейс для desktop и mobile.",
-      en: "The project expands a classic puzzle mechanic with active abilities, scrolls, levels, progression and an adaptive desktop/mobile interface."
-    },
-    solutions: {
-      ru: [
-        "Связь классической puzzle-механики с системой заклинаний",
-        "Адаптивный UI 720×1280 для разных экранов",
-        "Локальные и облачные сохранения, SDK и рекламные сценарии"
-      ],
-      en: [
-        "A classic puzzle mechanic connected to a spell system",
-        "Adaptive 720×1280 UI for different screens",
-        "Local and cloud saves, platform SDK and advertising scenarios"
-      ]
-    },
-    stack: ["HTML5", "CSS", "JavaScript", "Vite", "Yandex SDK", "LocalStorage"],
-    links: []
+  category: "html5",
+  type: {
+    ru: "Аркадный раннер",
+    en: "Arcade runner"
   },
+  status: "released",
+  statusLabel: {
+    ru: "Опубликовано",
+    en: "Released"
+  },
+  featured: false,
+  accent: "gold",
+  cover: "assets/projects/snitch-catchers.webp",
+  short: {
+    ru: "Динамичный HTML5-раннер о ночной погоне: игрок пролетает через кольца, ускоряется, избегает препятствий и ловит ускользающие снитчи.",
+    en: "A fast-paced HTML5 runner built around a night-time chase: players fly through rings, gain speed, dodge obstacles and catch escaping snitches."
+  },
+  details: {
+    ru: "Точные попадания в кольца сокращают дистанцию до цели, а промахи позволяют ей уйти. После сближения начинается финальный этап удержания контакта. Новые персонажи, магазин, очки и лидерборды поддерживают повторные погони, а GamePush и SDK-интеграции обеспечивают платформенные сервисы и рекламную монетизацию.",
+    en: "Accurate ring passes close the distance to the target, while misses allow it to escape. Catching up starts a final contact-hold phase. Unlockable characters, a store, scores and leaderboards support repeated chases, while GamePush and platform SDK integrations provide platform services and advertising monetization."
+  },
+  solutions: {
+    ru: [
+      "Кольца как система ускорения и управления дистанцией до цели",
+      "Финальная фаза удержания контакта после успешной погони",
+      "Управление мышью и касанием при нарастающей скорости",
+      "Персонажи, магазин, лидерборды, реклама и SDK-интеграции"
+    ],
+    en: [
+      "Rings used as a speed and target-distance system",
+      "A final contact-hold phase after a successful chase",
+      "Mouse and touch controls under steadily increasing speed",
+      "Characters, a store, leaderboards, advertising and SDK integrations"
+    ]
+  },
+  stack: [
+    "Construct 3",
+    "HTML5",
+    "GamePush",
+    "Platform SDKs",
+    "In-Game Store",
+    "Ads"
+  ],
+  links: [
+    {
+      label: {
+        ru: "Играть на Пикабу Игры",
+        en: "Play on Pikabu Games"
+      },
+      url: "https://games.pikabu.ru/game/lovtsyi-snitchey"
+    },
+    {
+      label: {
+        ru: "Играть на Играмбе",
+        en: "Play on Igramba"
+      },
+      url: "https://www.igramba.ru/kazualnye/lovtsy-snitchej/"
+    },
+    {
+      label: {
+        ru: "Играть на Woman.ru",
+        en: "Play on Woman.ru"
+      },
+      url: "https://games.woman.ru/game/lovtsy-snitchej/"
+    }
+  ]
+}
   {
     id: "astro",
     title: { ru: "Astro", en: "Astro" },
