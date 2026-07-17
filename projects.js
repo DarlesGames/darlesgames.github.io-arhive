@@ -289,28 +289,62 @@ window.DARLES_PROJECTS = [
   },
   {
     id: "skylink",
-    title: { ru: "СкайЛинк", en: "SkyLink" },
+    title: {
+      ru: "СкайЛинк",
+      en: "SkyLink"
+    },
     category: "html5",
-    type: { ru: "Веб-игра", en: "Web game" },
+    type: {
+      ru: "Кооперативный sci-fi платформер",
+      en: "Co-op sci-fi platformer"
+    },
     status: "released",
-    statusLabel: { ru: "Опубликовано", en: "Released" },
+    statusLabel: {
+      ru: "Опубликовано",
+      en: "Released"
+    },
     featured: false,
-    accent: "violet",
-    cover: "",
+    accent: "space",
+    cover: "assets/projects/skylink.webp",
     short: {
-      ru: "Опубликованная веб-игра Darles Games с адаптацией под браузерные игровые платформы.",
-      en: "A released Darles Games web game adapted for browser gaming platforms."
+      ru: "Кооперативный sci-fi платформер о двух астронавтах: исследуйте инопланетный мир, используйте реактивный ранец и вместе преодолевайте ловушки.",
+      en: "A co-op sci-fi platformer about two astronauts exploring an alien world, using a jetpack and coordinating to overcome deadly traps."
     },
     details: {
-      ru: "Проект входит в линейку самостоятельных HTML5-релизов студии и показывает полный цикл разработки и публикации.",
-      en: "Part of the studio's independent HTML5 release line, demonstrating the full development and publishing cycle."
+      ru: "Игра создана за несколько дней для геймджема Яндекс Игр на тему кооператива на одном экране. Проходить уровни можно в одиночку или вдвоем на общей клавиатуре: собирать кристаллы, искать портал, уничтожать врагов и выживать среди лазерных барьеров и энергетических бомб. Финальное испытание — бой с Баленрогом. Техническая основа проекта объединяет управление двумя персонажами, платформенную физику, механику реактивного ранца и браузерную публикацию.",
+      en: "Built in just a few days for a Yandex Games jam themed around same-screen cooperation. Levels support solo play or two players on one keyboard, with objectives ranging from collecting crystals and reaching a portal to defeating enemies and surviving laser barriers and energy bombs. The final challenge is a battle with Balenrog. Its technical foundation combines dual-character input, platforming physics, jetpack traversal and browser publishing."
     },
     solutions: {
-      ru: ["Полный цикл соло-разработки", "Платформенная публикация", "Поддержка браузерного формата"],
-      en: ["Complete solo development cycle", "Platform publishing", "Browser format support"]
+      ru: [
+        "Одиночный режим и локальный кооператив для двух игроков на общей клавиатуре.",
+        "Платформенное перемещение, реактивный ранец и взаимодействие с окружением.",
+        "Разнообразные цели уровней: кристаллы, портал, уничтожение врагов и выживание.",
+        "Система угроз с лазерными барьерами, летающими противниками, энергетическими бомбами и финальным боссом."
+      ],
+      en: [
+        "Solo play and local two-player co-op on a shared keyboard.",
+        "Platforming movement, jetpack traversal and environmental interaction.",
+        "Varied level objectives covering crystals, portals, enemy encounters and survival.",
+        "A hazard system built around laser barriers, flying enemies, energy bombs and a final boss."
+      ]
     },
-    stack: ["Construct 3", "HTML5", "Platform Publishing"],
-    links: []
+    stack: [
+      "Construct 3",
+      "HTML5",
+      "Local Co-op",
+      "Shared Keyboard Controls",
+      "Physics Platforming",
+      "Platform Publishing"
+    ],
+    links: [
+      {
+        label: {
+          ru: "Играть на Яндекс Играх",
+          en: "Play on Yandex Games"
+        },
+        url: "https://yandex.ru/games/app/477630?lang=ru"
+      }
+    ]
   },
   {
   id: "snitch-catchers",
@@ -450,5 +484,123 @@ window.DARLES_PROJECTS = [
     },
     stack: ["HTML5", "CSS", "JavaScript", "Vite", "SDK Adapter", "Git"],
     links: []
+  },
+  {
+    id: "fantastic-drive",
+    title: {
+      ru: "Улетный драйв",
+      en: "Fantastic Drive"
+    },
+    category: "html5",
+    type: {
+      ru: "Аркадная игра о вождении",
+      en: "Arcade driving game"
+    },
+    status: "released",
+    statusLabel: {
+      ru: "Опубликовано",
+      en: "Released"
+    },
+    featured: false,
+    accent: "orange",
+    cover: "assets/projects/fantastic-drive.webp",
+    short: {
+      ru: "Браузерная аркада о вождении: набирайте 1000 очков, собирайте монеты и уклоняйтесь от турелей и их снарядов на открытом игровом поле.",
+      en: "A browser driving arcade game: score 1,000 points, collect coins and evade turrets and their projectiles across an open playfield."
+    },
+    details: {
+      ru: "Одна из первых игр студии и ее первый релиз на Яндекс Играх — своеобразный артефакт раннего этапа Darles Games. Игрок управляет направлением и скоростью автомобиля, использует переход через границы поля как часть тактики и следит за траекториями ускоряющихся снарядов. Проект поддерживает управление мышью, виртуальным джойстиком и касаниями.",
+      en: "One of the studio's earliest games and its first Yandex Games release, Fantastic Drive is an artifact of Darles Games' early development. Players control the car's direction and speed, use wrap-around field boundaries tactically and read the trajectories of increasingly demanding projectiles. The project supports mouse, virtual joystick and touch input."
+    },
+    solutions: {
+      ru: [
+        "Управление направлением и скоростью автомобиля с помощью мыши, виртуального джойстика или касаний.",
+        "Переход через границы открытого поля без столкновения со стенами как полноценный тактический прием.",
+        "Система турелей и снарядов с читаемыми траекториями и нарастающей сложностью.",
+        "Подсчет очков через сбор монет с четкой целью в 1000 очков и перезапуском после столкновения."
+      ],
+      en: [
+        "Direction and speed controls for mouse, virtual joystick and touch input.",
+        "Wrap-around movement across an open field, turning boundary traversal into a tactical mechanic.",
+        "Turret and projectile systems with readable trajectories and escalating difficulty.",
+        "Coin-based scoring with a clear 1,000-point objective and collision-based restart loop."
+      ]
+    },
+    stack: [
+      "Construct 3",
+      "HTML5",
+      "Instant Games Bridge",
+      "Local Storage",
+      "Vehicle Controls",
+      "Projectile Systems"
+    ],
+    links: [
+      {
+        label: {
+          ru: "Играть на Construct Arcade",
+          en: "Play on Construct Arcade"
+        },
+        url: "https://www.construct.net/en/free-online-games/fantastic-drive-49158/play"
+      }
+    ]
+  },
+  {
+    id: "trick-or-treat",
+    title: {
+      ru: "Сладость или гадость",
+      en: "Trick or Treat"
+    },
+    category: "html5",
+    type: {
+      ru: "Хэллоуинская казуальная аркада",
+      en: "Halloween casual arcade"
+    },
+    status: "released",
+    statusLabel: {
+      ru: "Опубликовано",
+      en: "Released"
+    },
+    featured: false,
+    accent: "orange",
+    cover: "assets/projects/trick-or-treat.webp",
+    short: {
+      ru: "Небольшая казуальная аркада, созданная специально к Хэллоуину: простая механика сочетается с мрачной атмосферой и короткими страшными историями.",
+      en: "A compact casual arcade game made for Halloween, combining accessible mechanics, a gloomy atmosphere and memorable horror stories."
+    },
+    details: {
+      ru: "Один из ранних проектов студии на Construct 3. Компактная браузерная реализация объединяет поведенческие системы перетаскивания, снарядов и визуального движения, локальное сохранение состояния, звуковую обратную связь и управление с клавиатуры, мыши или сенсорного экрана.",
+      en: "One of the studio's earlier Construct 3 projects. Its compact browser implementation combines drag-and-drop, projectile and visual motion behaviors with local state persistence, audio feedback and keyboard, mouse or touch input."
+    },
+    solutions: {
+      ru: [
+        "Цельная хэллоуинская атмосфера в компактном и доступном аркадном формате.",
+        "Единый слой ввода для клавиатуры, мыши и сенсорных устройств.",
+        "Локальное сохранение состояния и интеграционный слой для публикации на игровых платформах.",
+        "Звуковая и визуальная обратная связь на базе модульных поведений Construct 3."
+      ],
+      en: [
+        "A cohesive Halloween atmosphere delivered through a compact and accessible arcade format.",
+        "A unified input layer for keyboard, mouse and touch devices.",
+        "Local state persistence and an integration layer for browser game platforms.",
+        "Audio and visual feedback assembled from modular Construct 3 behaviors."
+      ]
+    },
+    stack: [
+      "Construct 3",
+      "HTML5",
+      "Instant Games Bridge",
+      "Local Storage",
+      "Touch Controls",
+      "Audio"
+    ],
+    links: [
+      {
+        label: {
+          ru: "Играть на Construct Arcade",
+          en: "Play on Construct Arcade"
+        },
+        url: "https://www.construct.net/en/free-online-games/trick-or-treat-62637/play"
+      }
+    ]
   }
 ];
